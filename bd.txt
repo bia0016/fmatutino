@@ -1,0 +1,5 @@
+12 1200.00 andre emanoel davi de souza filho III
+44 1 eduardo
+34 800.00 bruno
+73 -20000.00 carlos
+58 100.00 davi eduardo
