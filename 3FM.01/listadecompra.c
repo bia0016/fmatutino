@@ -11,9 +11,9 @@ int main(){
     int qtd;
     float preco;
     char str[1000];
-    
-    while(fscanf(lis, "%[^\n] %d %f", produto, qtd, preco) != EOF){
-        sprintf(str, "%d) %s - %d x %.2f = %.2f\n", i, produto, qtd, preco, qtd * preco);
+    int i = 1;
+    while(fscanf(lis, "%[^\n] %d %f", produto, &qtd, &preco) != EOF){
+        sprintf(str, "\n%d) %s - %d x %.2f = %.2f\n", i, produto, qtd, preco, qtd * preco);
     }
     printf("arquivo aberto com sucesso\n");
     fclose(lis);
