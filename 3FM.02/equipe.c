@@ -5,6 +5,7 @@
 #include "equipe.h"
 int getPontos(equipe * t, int posicao);
 float getAproveitamento(equipe * t, char * nome);
+void insertionSort(equipe * v, int n);
 equipe * LerDados(char * Arquivo){
     printf("Arquivo a ser aberto: %s\n", Arquivo);
     equipe * x = malloc(20 * sizeof(equipe));
@@ -46,4 +47,19 @@ float getAproveitamento(equipe * t, char * nome){ //* é um vetor, portanto char
         }
     }
     return ERRO;
+}
+void insertionSort(equipe * v, int n){
+    equipe chave; // elemento que sera inserido na parte ordenada
+    int i; //posicao (ou coordenada) do elemento chave
+    int j; //posicao do elemento da "parte ordenada" que sera comparada com chave
+    for(i = 1; i < n; i++){
+        chave = v[i];
+        j = i - 1;
+        while(j >= 0 && strcmp(v[j].time, chave.time) > 0;){
+            v[j + 1] = v[j];
+            j--;
+        }
+        v[j + 1] = chave; //copiado o chave no ultimo lugar modificado
+        exibirVetor(v, n);
+    }
 }

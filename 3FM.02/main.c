@@ -4,6 +4,7 @@
 #include "equipe.h"
 int main(){
     equipe * tabela = LerDados("tabela.csv");
+    insertionSort(tabela, 20);
     printf("%d\n", getPontos(tabela, 20));
     printf("%.2f%%\n", getAproveitamento(tabela, "palmeiras"));
     printf("\n");
