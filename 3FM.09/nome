@@ -1,0 +1,19 @@
+system (start wmplayer ...)
+nao cai ordenação na prova
+
+exercicio
+    item * atual = E;
+    atual = atual->posterior;
+    atual = atual->posterior;
+    atual = atual->posterior;
+    atual = atual->anterior;
+    printf("%s\t%s\t%d\n", atual->titulo, atual->autor, atual->ano);
+    ---
+    como excluir um item
+    G->posterior = NULL;
+    free(H);
+    sempre ao excluir um item, libera a memoria dele - free(item);
+    ---
+    D->posterior = F;
+    F->anterior = D;
+    free(E);
