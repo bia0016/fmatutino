@@ -1,0 +1,11 @@
+vetores de ponteiro 
+//struct ponteiro * variavel[valor];
+
+Para a prova
+    pesquisa: sequencial e binaria
+    lista: encadeada e duplamente encadeada
+    fila e arvore
+    contar quantidade de nos e altura dela
+    para calcular altura se usa if - funcao int * contarNo
+    parte conceitual de arvores, topico 1
+    //busca binaria de arvore
